@@ -42,9 +42,16 @@ app.use(async ctx => {
 
   let host = conf.meta.ui.noHost;
 
-  if ('header' in ctx.request && 'host' in ctx.request.header)
+  if ('header' in ctx.request)
   {
-    host = ctx.request.header.host;
+    if ('x-forwarded-for' in ctx.request.header)
+    {
+      host = ctx.request.header['x-forwarded-for'];
+    }
+    else if ('host' in ctx.request.header)
+    {
+      host = ctx.request.header['host'];
+    }
   }
 
   ctx.status = conf.meta.koa.status;
