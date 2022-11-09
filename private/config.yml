@@ -1,0 +1,22 @@
+---
+meta:
+  app:
+    port: 3456
+    debug: true
+  koa:
+    defaultUrl: https://taiz.me/
+    # should be in 'public'
+    favicon: favicon.ico
+    status: 302
+  ui:
+    config: 'Config parsed.'
+    running: 'Application listening.'
+    noHost: '0.0.0.0/0'
+    request:
+      found: ', true, '
+      notFound: ', false, '
+    body:
+      found: 'Match found: '
+      notFound: 'Whoops, cy@.'
+data:
+  "/test": https://youtube.com/
