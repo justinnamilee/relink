@@ -1,0 +1,26 @@
+{
+  "name": "relink",
+  "version": "1.0.0",
+  "description": "Simple URL redirection.",
+  "main": "relink.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinnamilee/relink.git"
+  },
+  "author": "Justin Lee",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/justinnamilee/relink/issues"
+  },
+  "homepage": "https://github.com/justinnamilee/relink#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "koa": "^2.13.4",
+    "koa-favicon": "^2.1.0",
+    "yaml": "^2.1.3"
+  }
+}
