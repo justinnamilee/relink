@@ -20,3 +20,4 @@ meta:
       notFound: 'Whoops, cy@.'
 data:
   "/test": https://youtube.com/
+  # add more entries here
