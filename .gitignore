@@ -108,3 +108,4 @@ private/config.yml
 
 # PM2
 ecosystem.config.js
+ecosystem.config.cjs
