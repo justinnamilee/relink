@@ -94,6 +94,12 @@ app.use(async ctx => {
       }
     }
   }
+  //? list our...list
+  else if (ctx.request.url === conf.meta.koa.listUrl) {
+    ctx.type = 'json';
+    ctx.status = conf.meta.koa.status.list;
+    ctx.body = JSON.stringify(conf.data);
+  }
   //? handle our list
   else if (ctx.request.url in conf.data) {
     const match = conf.data[ctx.request.url];

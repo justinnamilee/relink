@@ -9,7 +9,9 @@ meta:
     editUrl: /modify
     # should be in 'public'
     favicon: favicon.ico
+    listUrl: /list
     status:
+      list: 200
       redirect: 302
       post: 200
       postFailed: 400
@@ -19,6 +21,7 @@ meta:
     noHost: 0.0.0.0:0
     request:
       found: ", true, "
+      list: ", list"
       notFound: ", false, "
       post: ", post, "
     body:
