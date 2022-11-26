@@ -1,6 +1,6 @@
 {
   "name": "relink",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Simple URL redirection.",
   "main": "relink.js",
   "type": "module",
