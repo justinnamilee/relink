@@ -1,8 +1,7 @@
----
 meta:
   app:
     port: 3456
-    debug: true
+    debug: false
   koa:
     defaultUrl: https://taiz.me/
     # should be in 'public'
@@ -15,18 +14,19 @@ meta:
       post: 200
       postFailed: 400
   ui:
-    config: 'Config parsed.'
-    running: 'Application listening.'
-    noHost: '0.0.0.0:0'
+    config: Config parsed.
+    running: Application listening.
+    noHost: 0.0.0.0:0
     request:
-      found: ', true, '
-      notFound: ', false, '
-      post: ', post, '
+      found: ", true, "
+      notFound: ", false, "
+      post: ", post, "
     body:
-      found: 'Match found: '
-      notFound: 'Whoops, cy@.'
+      found: "Match found: "
+      notFound: Whoops, cy@.
       post: Added.
-      postFailed: 'Check yo self.'
+      postFailed: Check yo self.
 data:
-  "/test": https://youtube.com/
+  /test: https://youtube.com/
+  /google: https://google.ca
   # add more entries here
