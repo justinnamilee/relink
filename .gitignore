@@ -105,6 +105,7 @@ dist
 
 # project specific
 private/config.yml
+private/.bak.config.yml
 
 # PM2
 ecosystem.config.js

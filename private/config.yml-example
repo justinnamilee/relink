@@ -6,18 +6,27 @@ meta:
   koa:
     defaultUrl: https://taiz.me/
     # should be in 'public'
+    editFile: modify.html
+    editUrl: /modify
+    # should be in 'public'
     favicon: favicon.ico
-    status: 302
+    status:
+      redirect: 302
+      post: 200
+      postFailed: 400
   ui:
     config: 'Config parsed.'
     running: 'Application listening.'
-    noHost: '0.0.0.0/0'
+    noHost: '0.0.0.0:0'
     request:
       found: ', true, '
       notFound: ', false, '
+      post: ', post, '
     body:
       found: 'Match found: '
       notFound: 'Whoops, cy@.'
+      post: Added.
+      postFailed: 'Check yo self.'
 data:
   "/test": https://youtube.com/
   # add more entries here

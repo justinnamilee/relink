@@ -20,7 +20,9 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
     "koa-favicon": "^2.1.0",
+    "valid-url": "^1.0.9",
     "yaml": "^2.1.3"
   }
 }
