@@ -57,7 +57,7 @@ app.use(async ctx => {
   if (ctx.request.url === conf.meta.koa.editUrl) {
     if (ctx.req.method === 'GET') {
       ctx.type = 'html';
-      ctx.status = 200;
+      ctx.status = conf.meta.koa.status.get;
       ctx.body = fs.createReadStream(__dirname + '/public/' + conf.meta.koa.editFile);
     }
     else {

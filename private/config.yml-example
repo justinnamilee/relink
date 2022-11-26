@@ -11,6 +11,7 @@ meta:
     favicon: favicon.ico
     listUrl: /list
     status:
+      get: 200
       list: 200
       redirect: 302
       post: 200
