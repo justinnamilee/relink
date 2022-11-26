@@ -105,3 +105,6 @@ dist
 
 # project specific
 private/config.yml
+
+# PM2
+ecosystem.config.js
