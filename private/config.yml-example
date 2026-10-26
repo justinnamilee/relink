@@ -1,0 +1,36 @@
+meta:
+  app:
+    port: 3456
+    debug: false
+  koa:
+    defaultUrl: https://taiz.me/
+    # should be in 'public'
+    editFile: modify.html
+    editUrl: /modify
+    # should be in 'public'
+    favicon: favicon.ico
+    listUrl: /list
+    status:
+      get: 200
+      list: 200
+      redirect: 302
+      post: 200
+      postFailed: 400
+  ui:
+    config: Config parsed.
+    running: Application listening.
+    noHost: 0.0.0.0:0
+    request:
+      found: ", true, "
+      list: ", list"
+      notFound: ", false, "
+      post: ", post, "
+    body:
+      found: "Match found: "
+      notFound: Whoops, cy@.
+      post: Added.
+      postFailed: Check yo self.
+data:
+  /test: https://youtube.com/
+  /google: https://google.ca
+  # add more entries here

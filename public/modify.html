@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <title>reLink!</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style type="text/css">
+    body {
+      background-color: rgb(105, 40, 75);
+      color: black;
+    }
+
+    form {
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .center {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font: 0/0 a;
+    }
+
+    .center:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+
+    /* css ripped right from w3schools lmfao */
+    input[type=text] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical
+    }
+
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="center">
+      <form action="modify" method="post">
+        <input title="Link name..." type="text" id="lname" name="lname"><br><br>
+        <input title="Link value..." type="text" id="lvalue" name="lvalue"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</body>
