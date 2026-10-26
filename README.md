@@ -19,3 +19,6 @@ node relink.js
 
 Most of the options should be fairly self-explanatory for the `config.yml`.  To add new links simply add another key to the `data` section of the file.  Bingo-bongo.
 
+## security
+
+Note, this project is really for-fun, I would not deploy this without looking at the code first; eventually this will be updated and this notice removed.
